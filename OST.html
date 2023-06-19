@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Website</title>
+  <style>
+
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #blogs {
+      background-color: #f5f5f5;
+    }
+
+    #blogs h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    #news {
+      background-color: #eaeaea;
+    }
+
+    #news h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    #events {
+      background-color: #f5f5f5;
+    }
+
+    #events h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    #jobs {
+      background-color: #eaeaea;
+    }
+
+    #jobs h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Blog Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="blogs">
+    <h2>Blogs</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere doloremque nesciunt ut accusantium, officiis, libero qui sunt modi sapiente alias nisi rerum, eos animi possimus cum impedit? Laborum, placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima, mollitia sed autem similique cupiditate natus impedit iste beatae suscipit quam placeat dolorem facere. Saepe labore maiores provident perferendis doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit aspernatur veritatis repellendus expedita mollitia incidunt? Adipisci mollitia laborum dolorem voluptates voluptatum nisi dignissimos eligendi, vitae enim ad culpa consequuntur.
+  </section>
+  
+  <section id="news">
+    <h2>News</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere doloremque nesciunt ut accusantium, officiis, libero qui sunt modi sapiente alias nisi rerum, eos animi possimus cum impedit? Laborum, placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima, mollitia sed autem similique cupiditate natus impedit iste beatae suscipit quam placeat dolorem facere. Saepe labore maiores provident perferendis doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit aspernatur veritatis repellendus expedita mollitia incidunt? Adipisci mollitia laborum dolorem voluptates voluptatum nisi dignissimos eligendi, vitae enim ad culpa consequuntur.
+  </section>
+  
+  <section id="events">
+    <h2>Events</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere doloremque nesciunt ut accusantium, officiis, libero qui sunt modi sapiente alias nisi rerum, eos animi possimus cum impedit? Laborum, placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima, mollitia sed autem similique cupiditate natus impedit iste beatae suscipit quam placeat dolorem facere. Saepe labore maiores provident perferendis doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit aspernatur veritatis repellendus expedita mollitia incidunt? Adipisci mollitia laborum dolorem voluptates voluptatum nisi dignissimos eligendi, vitae enim ad culpa consequuntur.
+  </section>
+  
+  <section id="jobs">
+    <h2>Jobs</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere doloremque nesciunt ut accusantium, officiis, libero qui sunt modi sapiente alias nisi rerum, eos animi possimus cum impedit? Laborum, placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum minima, mollitia sed autem similique cupiditate natus impedit iste beatae suscipit quam placeat dolorem facere. Saepe labore maiores provident perferendis doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit aspernatur veritatis repellendus expedita mollitia incidunt? Adipisci mollitia laborum dolorem voluptates voluptatum nisi dignissimos eligendi, vitae enim ad culpa consequuntur.
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Blog Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        const sectionId = link.getAttribute('href'); 
+        const section = document.querySelector(sectionId); 
+        section.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
